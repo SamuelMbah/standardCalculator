@@ -1,0 +1,95 @@
+html {
+    display: block;
+    font-size: 50%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #9dcc1e;
+    display: block;
+    margin: 4px;
+}
+
+div {
+    background-color: rgb(197, 76, 76);
+    border-radius: 30px;
+}
+
+input {
+    border-radius: 25px 25px 5px 5px;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.calculator {
+  border: 3px solid goldenrod;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+}
+
+.calc-display {
+  width: 100%;
+  font-size: 5rem;
+  height: 80px;
+  border: none;
+  background-color: #252525;
+  color: #fff;
+  text-align: right;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+button {
+  height: 50px;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 2px solid goldenrod;
+  background-color: transparent;
+  font-size: 2.5rem;
+  color: #000;
+}
+
+button:hover {
+  background-color: #eaeaea;
+}
+
+.operator {
+    background-color: magenta;
+}
+
+.clear {
+  background-color: #ec3037;
+  border-color: goldenrod;
+  color: #fff;
+}
+
+.clear:hover {
+  background-color: #f17377;
+}
+
+.equals {
+  background-color: #6c7174;
+  border-color: goldenrod;
+  color: #fff;
+  height: 100%;
+  grid-area: 2 / 4 / 5 / 4;
+}
+
+.equals:hover {
+  background-color: #7999ad;
+}
+
+.calc-btns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
